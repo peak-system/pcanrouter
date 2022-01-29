@@ -9,7 +9,7 @@ for ARM-based products" from the PEAK download site.
 
 As only the source code of the different PCAN router hardware is needed
 the unused non-Linux stuff is omitted in the unzip process and the PCAN
-router code for the different hardware types is provided in the 'hw'
+router code for the different hardware types is provided in the `hw`
 directory.
 
 ## download_hex2bin109_source.sh
@@ -25,12 +25,14 @@ protocol.
 ## needed cross compile packages for (Debian/Ubuntu) Linux
 
 Install these packages with `apt install <package>`.
-The install process requires root credentials so it may be `sudo apt install <package>`.
+
+(The install process requires root credentials so it may be `sudo apt install <package>`)
 
 - gcc-arm-none-eabi
 - binutils-arm-none-eabi
 - libnewlib-arm-none-eabi
 - libstdc++-arm-none-eabi-newlib
+- libstdc++-arm-none-eabi-dev
 - libnewlib-dev
 
 ## compile PCAN router source code example
