@@ -1,7 +1,8 @@
 #!/bin/sh
 
 DEV_PACK=PEAK-DevPack.zip
-DPHW_PATH=PEAK-DevPack/Hardware
+#DPHW_PATH=PEAK-DevPack/Hardware
+DPHW_PATH=Hardware
 DEV_PACK_URL=https://www.peak-system.com/fileadmin/media/files/$DEV_PACK
 DOWNLOAD_DIR=downloads_$$
 HW_DIR=hw
@@ -35,7 +36,7 @@ unzip -d $HW_DIR $DOWNLOAD_DIR/$DEV_PACK $DPHW_PATH/*
 echo Remove download directory $DOWNLOAD_DIR
 rm -rf $DOWNLOAD_DIR
 
-echo Remove PEAK-DevPack/Hardware path segment
+echo Remove $DPHW_PATH path segment
 cd $HW_DIR
 mv $DPHW_PATH/* .
 rmdir -p $DPHW_PATH
